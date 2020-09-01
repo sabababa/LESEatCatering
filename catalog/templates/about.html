@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static "css/home.css" %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <title>About</title>
+</head>
+<body>
+        <div class="img" style="background-image: url(/static/images/aboutbg.jpg);">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg fixed-top py-3">
+                    
+                    <a href="#" class="navbar-brand text-uppercase" style="font-family: Special Elite;"><img src="{% static "images/logo.jpg" %}" style="height: 50px;">     L.E.S.  Eat  Catering</a>
+                    <div class="container">
+                        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                        
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link text-uppercase " style="font-family: Unica One;">About</a></li>
+                                <li class="nav-item"><a href="{% url 'services' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Services</a></li>
+                                <li class="nav-item"><a href="{% url 'menus' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Menus</a></li>
+                                <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Gallery</a></li>
+                                <li class="nav-item"><a href="{% url 'book' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Book Now</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-uppercase " style="font-family: Unica One;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            
+            
+            <!-- For demo purpose -->
+            <div class="container">
+                <div class="pt-5 text-white">
+                    <header class="py-5 mt-5">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                        <h1 style="font-family: Special Elite; font-weight: bold; font-size: 80px;">About Us</h1>
+                        <p class="lead">Experienced Professionals</p>
+                    </header>
+                    
+                </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <img src="{% static "images/bowl.png" %}" alt="" style="height: 100px; margin-left: 225px;">
+          <img src="{% static "images/family.png" %}" alt="" style="height: 100px; margin-left: 320px;">
+          <img src="{% static "images/chefshat.png" %}" alt="" style="height: 100px; margin-left: 320px;">
+          <p></p>
+          <div style="text-align: center; ">
+          <div style="display: inline-block; margin-left: -40px; width: 300px;">
+            <p style="font-family: Unica One; font-weight: bold;">Southern Food</p>
+                <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </div>
+          <div style="display: inline-block; margin-left: 130px; width: 300px;">
+                <p style="font-family: Unica One; font-weight: bold;"> Family Recipes </p>
+                <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </div>
+          <div style="display: inline-block; margin-left: 120px; width: 300px;">
+                <p style="font-family: Unica One; font-weight: bold;"> Certified </p>
+                <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <p style="text-align: center; font-family: Unica One; font-size: 20px; color: lightcoral;">- Background -</p>
+        <p style="text-align: center; font-size: 40px;">Our Story</p>
+          <div style=" margin-left: 150px; margin-right: 150px; text-align: center;">
+            
+            <br>
+            
+                <p class="lead">Growing up, we all knew that events, brought out the best food one could imagine having access to.  Whether it was a wedding, a baptism, a birthday party or even a funeral, food seems to take center stage and shine during these moments.</p>
+                <p class="lead">Southern food, in particular, fits perfectly for events.  Maybe it’s because so much about southern food, from its preparation to serving has to do with sentiment.  Whether it’s Grandma’s baked Candied Yams or Uncle Bobby's Deep Fried Turkey, we know that the recipes in Southern food come from the heart.</p>
+                <p class="lead">When L.E.S. EAT Catering proprietor Kimberly Crosby-McCoy decided she wanted to start a catering service and share some of her family’s own soul food recipes, it was based on the same values and principles.  “L.E.S.” is an acronym based on influences in Mrs. Crosby-McCoy’s life: her Grandmother Laura, her maternal Aunt Eleanor (affectionately known as Auntie Elle) and her mother, the lovely Mrs. Shirley Crosby.  From these women, Mrs. Crosby-McCoy learned about cooking and serving others as well as importance of being prepared and determined to succeed. She received her entrepreneur spirit from her late grandmother Linda Crosby, she use to hustle & sell food out of her kitchen in Roger Williams Projects in Mobile, Alabama.</p> 
+               <p class="lead">Kimberly has her Food Manager Certification in the States of Illinois and Indiana. </p>
+                <br>
+          </div>
+
+          
+          
+<br>
+           <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: black;"> 
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">L.E.S. Eat Catering</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Social Media</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/leseatcatering/">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/leseatcatering/">Instagram</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="{% url 'menus' %}">Menus</a>
+                </li>
+                <li>
+                  <a href="{% url 'about' %}">About</a>
+                </li>
+                
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <p> L.E.S. Eat Catering LLC</p>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+      </body>
+<script>
+  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+
+
+
+</script>
+</html>

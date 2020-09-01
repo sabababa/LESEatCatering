@@ -1,0 +1,168 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+.img {
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+#blocks {
+    margin-left: 100px;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+}
+.block-one .py-5 {
+    margin-right: 700px;
+}
+
+.block-two .py-5{
+    margin-left: 600px;
+    margin-right: 100px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/static/images/icecream.png");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parall, .para {
+    /* The image used */
+    background-image: url("/static/images/homebg.jpg");
+    
+    /* Set a specific height */
+    min-height: 500px; 
+    max-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ .para {
+     background-image: url(/static/images/menubg.jpg);
+    min-height: 600px;
+    
+  }
+
+ .reviews {
+     display: inline-block;
+     margin-left: 120px;
+     margin-right: 50px;
+     color: white;
+     width: 300px;
+     font-size: 20px;
+     
+     text-align: center;
+ }
+
+ #exTab1 .tab-content {
+    color : white;
+    padding : 5px 15px;
+  }
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  .accordion {
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+  #headingOne1, #headingTwo2, #headingThree3 {
+      background-color: white;
+      
+  }
+
+  .card {
+    border: none;
+  }
+
+  .card a {
+      color: black;
+      font-size: 30px;
+  }
+    

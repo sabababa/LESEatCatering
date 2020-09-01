@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "project",
+			"path": "../.."
+		},
+		{
+			"name": "images",
+			"path": "../../../Catering/html/css/images"
+		}
+	],
+	"settings": {}
+}

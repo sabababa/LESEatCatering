@@ -1,0 +1,353 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Economica|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>L.E.S. Eat Catering</title>
+</head>
+<body>
+  <div class="img" style="background-image: url(/static/images/menubg.jpg);">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            
+            <a href="#" class="navbar-brand text-uppercase" style="font-family: Special Elite;"><img src="{% static "images/logo.jpg" %}" style="height: 50px;">     L.E.S.  Eat  Catering</a>
+            <div class="container">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link text-uppercase " style="font-family: Unica One;">About</a></li>
+                                <li class="nav-item"><a href="{% url 'services' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Services</a></li>
+                                <li class="nav-item"><a href="{% url 'menus' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Menus</a></li>
+                                <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Gallery</a></li>
+                                <li class="nav-item"><a href="{% url 'book' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Book Now</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-uppercase " style="font-family: Unica One;">Contact Us</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- For demo purpose -->
+    <div class="container">
+        <div class="pt-5 text-white">
+            <header class="py-5 mt-5">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+                <h1 style="font-family: Special Elite; font-weight: bold; font-size: 80px;">Menus </h1>
+                <br>
+                
+            </header>
+            
+        </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+
+<div>
+    <p style="font-family: Unica One; text-align: center; font-size: 20px; color: lightcoral;">- DISCOVER -</p>
+    <p style="font-family: Playfair Display SC; text-align: center; font-size: 40px;">Explore Our Menus</p>
+    <p style="font-family: Economica; text-align: center; font-size: 20px; margin-right: 300px; margin-left: 300px;">Explore texture, color and of course the ultimate tastes with our menu of the season. All the ingredients are fresh and carefully selected by our chefs. Enjoy an extraordinary dinning experience.</p>
+</div>
+<br>
+<br>
+         <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true" >
+
+        <!-- Accordion card -->
+        <div class="card border-0">
+      
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingOne1">
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+              aria-controls="collapseOne1">
+              <p style="display: inline-block;">+</p>
+              <p style="display: inline-block; font-weight: bold; font-family: Playfair Display SC;">
+                A LA CARTE <i class="fas fa-angle-down rotate-icon"></i>
+              </p>
+            </a>
+          </div>
+      
+          <!-- Card body -->
+          <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Pasta</h4>
+              <p style= "text-align:center;">$65 Sm Tray | $95 Lg Tray</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;"> Nicole's Mac & Cheese</p>
+              <p style = "color: gray; text-align:center; font-style: italic;">3 different creamy cheeses and its out most requested pasta</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Mostaccioli</p>
+              <p style = "color: gray; text-align:center; font-style: italic;">Baked penne noodles in our Sweet Marinara sauce with peppers, onions, fresh garlic, mushrooms, topped with Mozzarella, Cheddar, & Parmesean Cheeses</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Beef, Turkey, Vegetable Lasagna(+20)</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Seafood Pasta (+20)</p>
+              <p style = "color: gray; text-align:center; font-style: italic;">Bow Tie pasta covered in our homemade Parmesan Wine Sauce, Red Onions, Peppers, Spinach, Shrimp, Crawfish, & Crab Meat </p>
+              <p style = "text-align:center; font-family: Playfair Display SC;"> Nawlins Cajun Pasta</p>
+              <p style = "color: gray; text-align:center; font-style: italic;">Bow Tie Pasta, served in our Jambalaya Sauce, chicken breast, Andouille Sausage, Peppers, Onions, & topped with Parmesan Cheese</p>
+              <hr>
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Wings</h4>
+              <p style= "text-align:center;">$65 Sm Tray of 50 | $110 Lg Tray</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Honey BBQ fried & tossed in our thick Spicy & Sweet honey BBQ sauce</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Peachy Hot Wings friend & tossed in our Real Peach Juice & Sriracha Chilli Sauce</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Southern Wings topped with Lemon Pepper</p>
+              <p style= "text-align:center; font-size: 10; color: gray;">*Fried in Peanut Oil*</p>
+              <hr>
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Vegetables</h4>
+              <p style= "text-align:center;">$65 Sm Tray of 50 | $110 Lg Tray</p>
+              <p style="font-family: Playfair Display SC; text-align:center;">Vegetable Medley</p>
+              <p style= "text-align:center; color: gray; font-style: italic;">Broccoli, carrots, cauliflower boiled in our special broth & real butter</p>
+              <p style="font-family: Playfair Display SC; text-align:center;">Collard Greens</p>
+              <p style= "text-align:center; color: gray; font-style: italic;">Handpicked and sorry we can't tell you what we cook them in, just know it's our Best Seller!</p>
+              <p style="font-family: Playfair Display SC; text-align:center;">String Beans cooked with Smoked Turkey Wings, Red Onions & Potatoes</p>
+              <hr>
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Sides</h4>
+              <p style= "text-align:center; font-family: Playfair Display SC; ">Sweet Potato Creme Brulee with Honey Butter $65</p>
+              <p style= "text-align:center; font-family: Playfair Display SC; ">Cheddar Cheese Grits $55 </p>
+              <p style= "text-align:center; font-family: Playfair Display SC; ">Parmesan & Garlic Mashed Potatoes $65</p>
+              <p style= "text-align:center; font-family: Playfair Display SC; "> Roasted Potatoes</p>
+            </div>
+          </div>
+      
+        </div>
+        <!-- Accordion card -->
+      
+        <!-- Accordion card -->
+        <div class="card border-0">
+      
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingTwo2">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+              aria-expanded="false" aria-controls="collapseTwo2">
+              <p style="display: inline-block;">+</p>
+              <p style="display: inline-block; font-weight: bold; font-family: Playfair Display SC;">
+                APPETIZERS <i class="fas fa-angle-down rotate-icon"></i>
+              </p>
+            </a>
+          </div>
+      
+          <!-- Card body -->
+          <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+            data-parent="#accordionEx">
+            <div class="card-body">
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Hawaiian or Mardi Gras Meatballs</p>
+                    <p style= "text-align:center;">$50 1/2 Tray of 50 | $95 Lg Tray</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Our Hawaiaan meatballs are smothered in our sweet pineabpple sauce & slow cooked to tender perfection</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Our Mardi Gras Meatballs are simmered in our 1703 Mobile, Alabama sauce (Original Mardi Gras)</p>
+                    <hr>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Honey BBQ Wings</p>
+                    <p style= "text-align:center;">$75 1/2 Tray of 50 | $110 Lg Tray</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Fried wings in our thick and Southern sweet honey BBQ sauce</p>
+                    <hr>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Fancy Finger Sandwiches</p>
+                    <p style= "text-align:center;">50 sandwiches $75</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Petite handcrafted sandwiches of chicken salad, tuna salad, and our homemade garden vegetable cream cheese.</p>
+                    <hr>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Spinach Dip Tray</p>
+                    <p style= "text-align:center;">$50 serves 15</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Toasted crostini and Homemade spinach dip, served with salsa and sour cream.</p>
+                    <hr>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Guacamole Tray</p>
+                    <p style= "text-align:center;">$65 serves 15</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">Homemade Guacamole served with Tortilla Chips.</p>
+                    <hr>
+                    <p style = "text-align:center; font-family: Playfair Display SC; font-weight: bold;">Desserts</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Eleanor's Decadent Chocolate Cake $60</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Isaiah's Banana Pudding made with Chessmen Cookies $65</p>
+            </div>
+          </div>
+      
+        </div>
+        <!-- Accordion card -->
+      
+        <!-- Accordion card -->
+        <div class="card border-0">
+      
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingThree3">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+              aria-expanded="false" aria-controls="collapseThree3">
+              <p style="display: inline-block;">+</p>
+              <p style="display: inline-block; font-weight: bold; font-family: Playfair Display SC;">
+                PARTY PACK <i class="fas fa-angle-down rotate-icon"></i>
+              </p>
+            </a>
+          </div>
+      
+          <!-- Card body -->
+          <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Party Pack feeds 15</h5>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Gluten Free Party Pack $110</p>
+              <p style = "text-align:center; color: gray; font-style: italic;">Herb Roasted Chicken Roasted, Vegetable Medley, Steamed Parboiled Rice </p>
+              <hr>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Kids Party Pack $140</p>
+              <p style = "text-align:center; color: gray; font-style: italic;">10 Hot Dogs, 30 Chicken Nuggets, Mac and Cheese, Fresh Cut Fruit Salad </p>
+              <hr>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Chicken & Pasta Pack $155</p>
+              <p style = "text-align:center; color: gray; font-style: italic;">Our Southern Fried Chicken, Baked Mostaccioli Three Cheeses, Our Homemade Potato Salad, Rolls and Butter </p>
+              <hr>
+              <p style = "text-align:center; font-family: Playfair Display SC;">BBQ Rib Tips & Chicken Pack $200</p>
+              <p style = "text-align:center; color: gray; font-style: italic;">BBQ Rib Tips or Baked BBQ Chicken, Potato Salad, Buttery & Sweet Corn on the Cob, Rolls and Butter </p>
+              <hr>
+              <p style = "text-align:center; font-family: Playfair Display SC; font-weight: bold;">Desserts</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Eleanor's Decadent Chocolate Cake $60</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Isaiah's Banana Pudding made with Chessmen Cookies $65</p>
+              <p style = "text-align:center; font-family: Playfair Display SC;">Laura's Homemade Pound Cake made with five flavors</p>
+            </div>
+          </div>
+      
+        </div>
+        <!-- Accordion card -->
+
+        <div class="card border-0">
+      
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingTwo2">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+              aria-expanded="false" aria-controls="collapseFour4">
+              <p style="display: inline-block;">+</p>
+              <p style="display: inline-block; font-weight: bold; font-family: Playfair Display SC;">
+                Family Style <i class="fas fa-angle-down rotate-icon"></i>
+              </p>
+            </a>
+          </div>
+      
+          <!-- Card body -->
+          <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">$22.50 per Person</h5>
+                    <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">50 People Minimum</h5>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Mixed Green Salad, 2 Dressings, 2 sides, 1 meat</p>
+                    
+                    <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Sides</h5>
+                    <p style = "text-align:center; font-family: Playfair Display SC;">Garlic Mashed Potatoes</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Mashed Potatoes</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Italian Green Beans</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;"> with Smoked Turkey, Red Potatoes, and Onions</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Bow Tie Pasta</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">with creamy wine sauce, spinach, peppers, & red onions</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Bake Mostaccioli Marinara</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;">with mushrooms, basil & peppers</p>
+                    
+                    <hr>
+                    <h5 style="font-family: Playfair Display SC; font-weight: bold; text-align:center;">Entree</h5>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Roast Beef Steak</p>
+                    <p style= "text-align:center; color: gray; font-style: italic;"> covered in a rich beef gravy with roasted portabello mushrooms and sauteed onions</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Herb Baked Chicken</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Mardi Gras Crispy Baked Chicken</p>
+                    <p style = "text-align:center; font-family: Playfair Display SC; ">Caribbean Jerk Chicken</p>
+            </div>
+          </div>
+      
+        </div>
+      
+      </div>
+      <!-- Accordion wrapper -->
+        
+        <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: black;"> 
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">L.E.S. Eat Catering</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Social Media</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/leseatcatering/">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/leseatcatering/">Instagram</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="{% url 'menus' %}">Menus</a>
+                </li>
+                <li>
+                  <a href="{% url 'about' %}">About</a>
+                </li>
+                
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <p> L.E.S. Eat Catering LLC</p>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+      </body>
+<script>
+  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+
+
+
+</script>
+</html>

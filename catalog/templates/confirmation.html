@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Economica|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>L.E.S. Eat Catering</title>
+</head>
+<body>
+  <div class="img" style="background-image: url(/static/images/newbg.jpg);">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            
+            <a href="#" class="navbar-brand text-uppercase" style="font-family: Monoton;"><img src="{% static "images/logo.jpg" %}" style="height: 50px;">     L.E.S.  Eat  Catering</a>
+            <div class="container">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link text-uppercase " style="font-family: Unica One;">About</a></li>
+                                <li class="nav-item"><a href="{% url 'services' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Services</a></li>
+                                <li class="nav-item"><a href="{% url 'menus' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Menus</a></li>
+                                <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Gallery</a></li>
+                                <li class="nav-item"><a href="{% url 'book' %}" class="nav-link text-uppercase " style="font-family: Unica One;">Book Now</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-uppercase " style="font-family: Unica One;">Contact Us</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="pt-5 text-white">
+            <header class="py-5 mt-5">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+                <h1 style="font-family: Special Elite; font-weight: bold; font-size: 80px;">Book Us</h1>
+                <br>
+            </header>
+            
+        </div>
+    </div>
+  </div>
+
+  <br>
+  <p style="font-family: Unica One; text-align: center; font-size: 20px; color: lightcoral;">- Book Now -</p>
+  <p style="font-family: Playfair Display SC; text-align: center; font-size: 40px;">Request an Appointment</p>
+  <p style="font-family: Economica; text-align: center; font-size: 20px; margin-right: 300px; margin-left: 300px;">Thank you for booking an appointment with us! Please check your email for confirmation of your appointment.</p>
+  
+  <br>
+  <br>
+<footer class="page-footer font-small blue pt-4" style="background-color: black;"> 
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">L.E.S. Eat Catering</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Social Media</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/leseatcatering/">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/leseatcatering/">Instagram</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="{% url 'menus' %}">Menus</a>
+                </li>
+                <li>
+                  <a href="{% url 'about' %}">About</a>
+                </li>
+                
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <p> L.E.S. Eat Catering LLC</p>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+      </body>
+<script>
+  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+
+
+
+</script>
+</html>
