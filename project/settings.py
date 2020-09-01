@@ -141,3 +141,6 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'vegansaba@gmail.com'
 
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
